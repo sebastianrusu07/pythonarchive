@@ -1,7 +1,7 @@
 import sys
 
-fin = ""
-fout = ""
+name = ""
 
-sys.stdin = open(fin, "r")
-sys.stdout = open(fout, "w")
+sys.stdin = open("{}.in".format(name), "r")
+sys.stdout = open("{}.out".format(name), "w")
+
