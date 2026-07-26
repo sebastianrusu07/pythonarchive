@@ -12,6 +12,6 @@ def nextPermutation(stringBefore):
         pos -= 1
     string[pos],string[pivot] = string[pivot],string[pos]
 
-    string[pivot+1:] = string[pivot+1:][::-1]
+    string[pivot+1:].reverse()
 
     return "".join(string)
