@@ -19,6 +19,7 @@ def changesToReflection():
             bl = (n - i - 1, length - j - 1)
 
             k = (grid[tr[0]][tr[1]] == '#') + (grid[tl[0]][tl[1]] == '#') + (grid[br[0]][br[1]] == '#') + (grid[bl[0]][bl[1]] == '#')
+            toChange = min(k,4-k) #either change them to be . or to be #
             total+=toChange
             row.append(k)
         kGroups.append(row)
